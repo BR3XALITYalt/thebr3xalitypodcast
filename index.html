@@ -4,17 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Br3xality Podcast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
   <style>
     @font-face {
-      font-family: 'Cal Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url('https://codeberg.org/BR3XALITY/pages/raw/branch/main/fonts/Cal%20Sans.woff2') format('woff2');
-    }
-    @font-face {
       font-family: 'PeterMedium';
-      src: url('https://codeberg.org/BR3XALITY/pages/raw/branch/main/fonts/petermedium.woff') format('woff');
+      src: url('fonts/petermedium.woff') format('woff');
       font-weight: normal;
       font-style: normal;
       font-display: swap;
@@ -117,7 +113,7 @@
     ></iframe>
   </div>
 
-  <p>The BR3XALITY Podcast is a Podcast about, well... all things BR3XALITY.</p>
+  <p>Raw conversations. Real perspectives. No filter.</p>
 
   <button id="notify-btn">🔔 Notify me of new episodes</button>
   <p id="notify-status"></p>
@@ -128,8 +124,8 @@
 
   <script>
     // !! Fill these in after deploying your Cloudflare Worker !!
-    const WORKER_URL = 'https://br3xality-podcast.marioplays254.workers.dev';
-    const VAPID_PUBLIC_KEY = 'BD8fFg94qbEQvq71CSgGa-IQYXEjegVEaXuwbEtalUrC1pLMfiNO9bzi4Ql3H51o-C3FCpNNvVrJFOsSsOz_8sI';';
+    const WORKER_URL = 'https://br3xality-podcast.YOUR_SUBDOMAIN.workers.dev';
+    const VAPID_PUBLIC_KEY = 'REPLACE_WITH_YOUR_VAPID_PUBLIC_KEY';
 
     const btn = document.getElementById('notify-btn');
     const status = document.getElementById('notify-status');
